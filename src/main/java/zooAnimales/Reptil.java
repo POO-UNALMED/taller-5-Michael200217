@@ -16,7 +16,7 @@ public class Reptil extends Animal{
 	public Reptil(){
 		listado++;
 	}
-	public int cantidadReptiles() {
+	public static int cantidadReptiles() {
 		int z=serpientes+iguanas;
 		return z;
 	}

@@ -14,7 +14,7 @@ public class Ave extends Animal{
 		this.setGenero(genero);
 		this.colorPlumas=colorPlumas;
 	}
-	public int cantidadAves() {
+	public static int cantidadAves() {
 		int z=halcones+aguilas;
 		return z;
 	}

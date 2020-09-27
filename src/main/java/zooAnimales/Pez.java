@@ -17,7 +17,7 @@ public class Pez extends Animal{
 		listado++;
 	}
 	
-	public int cantidadPeces() {
+	public static int cantidadPeces() {
 		int z=bacalaos+salmones;
 		return z;
 	}
