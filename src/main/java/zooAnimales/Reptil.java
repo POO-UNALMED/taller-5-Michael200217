@@ -1,12 +1,11 @@
 package zooAnimales;
-import java.util.*;
 public class Reptil extends Animal{
 	private static int listado;
 	public int iguanas;
 	public int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-	Reptil(String nombre,int edad,String habitat,String genero,String colorEscamas,int largoCola){
+	public Reptil(String nombre,int edad,String habitat,String genero,String colorEscamas,int largoCola){
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat(habitat);
@@ -14,7 +13,7 @@ public class Reptil extends Animal{
 		this.colorEscamas=colorEscamas;
 		this.largoCola=largoCola;
 	}
-	Reptil(){
+	public Reptil(){
 		listado++;
 	}
 	public int cantidadReptiles() {

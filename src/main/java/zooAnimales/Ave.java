@@ -1,14 +1,13 @@
 package zooAnimales;
-import java.util.*;
 public class Ave extends Animal{
 	private static int listado;
 	public int halcones;
 	public int aguilas;
 	private String colorPlumas;
-	Ave(){
+	public Ave(){
 		listado++;
 	}
-	Ave(String nombre,int edad,String habitat,String genero,String colorPlumas){
+	public Ave(String nombre,int edad,String habitat,String genero,String colorPlumas){
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat(habitat);
@@ -28,7 +27,7 @@ public class Ave extends Animal{
 		this.setEdad(edad);
 		this.setGenero(genero);
 		this.colorPlumas="cafe glorioso";
-		this.setHabitat("montañas");
+		this.setHabitat("montanas");
 		halcones++;
 	}
 	public void crearAguila(String nombre,int edad,String genero) {

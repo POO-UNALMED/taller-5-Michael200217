@@ -4,10 +4,9 @@ public class Zoologico {
 	private String nombre;
 	private String ubicacion;
 	private ArrayList<Zona>zonas=new ArrayList<Zona>();
-	Zoologico(String nombre,String ubicacion,Zona zonas){
+	public Zoologico(String nombre,String ubicacion){
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
-		this.zonas.add(zonas);
 	}
 	public void agregarZonas(Zona zona) {
 		zonas.add(zona);

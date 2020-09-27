@@ -1,5 +1,4 @@
 package zooAnimales;
-import java.util.*;
 
 public class Mamifero extends Animal {
 	private static int listado;
@@ -7,7 +6,7 @@ public class Mamifero extends Animal {
 	public int leones;
 	private boolean pelaje;
 	private int patas;
-	Mamifero(String nombre,int edad,String habitat,String genero,boolean pelaje,int patas){
+	public Mamifero(String nombre,int edad,String habitat,String genero,boolean pelaje,int patas){
 		this.setNombre(nombre);
 		this.setEdad(edad);
 		this.setHabitat(habitat);
@@ -15,7 +14,7 @@ public class Mamifero extends Animal {
 		this.pelaje=pelaje;
 		this.patas=patas;
 	}
-	Mamifero(){
+	public Mamifero(){
 		listado++;
 	}
 	public int cantidadMamiferos() {
