@@ -21,7 +21,7 @@ public class Animal {
 		String z="desplazarse";
 		return z;
 	}
-	public static String totalPorTipos() {
+	public static String totalPorTipo() {
 		String x="Mamiferos: "+Mamifero.getListado()+"/n"+"Aves: "+Ave.getListado()+"/n"+"Reptiles: "+Reptil.getListado()+"/n"+"Peces: "+Pez.getListado()+"/n"+"Anfibios: "+Anfibio.getListado();
 		return x;
 	}
