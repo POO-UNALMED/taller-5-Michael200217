@@ -37,7 +37,7 @@ public class Mamifero extends Animal {
 	public static void setListado(int listado) {
 		Mamifero.listado = listado;
 	}
-	private boolean isPelaje() {
+	public boolean isPelaje() {
 		return pelaje;
 	}
 	public void setPelaje(boolean pelaje) {
