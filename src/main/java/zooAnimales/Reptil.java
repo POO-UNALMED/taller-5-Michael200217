@@ -1,8 +1,8 @@
 package zooAnimales;
 public class Reptil extends Animal{
 	private static int listado;
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	public Reptil(String nombre,int edad,String habitat,String genero,String colorEscamas,int largoCola){
@@ -24,23 +24,15 @@ public class Reptil extends Animal{
 		String z="reptar";
 		return z;
 	}
-	public void crearIguana(String nombre,int edad,String genero) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setGenero(genero);
-		this.colorEscamas="verde";
-		this.largoCola=3;
-		this.setHabitat("humedal");
+	public static Reptil crearIguana(String nombre,int edad,String genero) {
+		Reptil iguana=new Reptil(nombre,edad,"humedal",genero,"verde",3);
 		iguanas++;
+		return iguana;
 	}
-	public void crearSerpiente(String nombre,int edad,String genero) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setGenero(genero);
-		this.colorEscamas="blanco";
-		this.largoCola=1;
-		this.setHabitat("jungla");
+	public static Reptil crearSerpiente(String nombre,int edad,String genero) {
+		Reptil iguana=new Reptil(nombre,edad,"jungla",genero,"blanco",1);
 		serpientes++;
+		return iguana;
 	}
 	public static int getListado() {
 		return listado;

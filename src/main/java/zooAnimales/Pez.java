@@ -1,8 +1,8 @@
 package zooAnimales;
 public class Pez extends Animal{
 	private static int listado;
-	public int salmones;
-	public int bacalaos;
+	public static int salmones;
+	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
 	public Pez(String nombre,int edad,String habitat,String genero,String colorEscamas,int cantidadAletas){
@@ -25,20 +25,15 @@ public class Pez extends Animal{
 		String z="nadar";
 		return z;
 	}
-	public void crearSalmon(String nombre,int edad,String genero) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setGenero(genero);
-		this.colorEscamas="rojo";
-		this.cantidadAletas=6;
-		this.setHabitat("oceano");
+	public static Pez crearSalmon(String nombre,int edad,String genero) {
+		Pez salmon=new Pez(nombre,edad,"oceano",genero,"rojo",6);
 		salmones++;
+		return salmon;
 	}
-	public void crearBacalao(String nombre,int edad,String genero) {
-		this.colorEscamas="gris";
-		this.cantidadAletas=6;
-		this.setHabitat("oceano");
+	public static Pez crearBacalao(String nombre,int edad,String genero) {
+		Pez bacalao=new Pez(nombre,edad,"oceano",genero,"gris",6);
 		bacalaos++;
+		return bacalao;
 	}
 	public static int getListado() {
 		return listado;

@@ -8,6 +8,9 @@ public class Zoologico {
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
 	}
+	public Zoologico() {
+		
+	}
 	public void agregarZonas(Zona zona) {
 		zonas.add(zona);
 	}

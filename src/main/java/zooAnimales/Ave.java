@@ -1,8 +1,8 @@
 package zooAnimales;
 public class Ave extends Animal{
 	private static int listado;
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	public Ave(){
 		listado++;
@@ -22,21 +22,15 @@ public class Ave extends Animal{
 		String z="volar";
 		return z;
 	}
-	public void crearHalcon(String nombre,int edad,String genero) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setGenero(genero);
-		this.colorPlumas="cafe glorioso";
-		this.setHabitat("montanas");
+	public static Ave crearHalcon(String nombre,int edad,String genero) {
+		Ave halcon=new Ave(nombre,edad,"montanas",genero,"cafe glorioso");
 		halcones++;
+		return halcon;
 	}
-	public void crearAguila(String nombre,int edad,String genero) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setGenero(genero);
-		this.colorPlumas="blanco y amarillo";
-		this.setHabitat("montanas");
+	public static Ave crearAguila(String nombre,int edad,String genero) {
+		Ave aguila=new Ave(nombre,edad,"montanas",genero,"blanco y amarillo");
 		aguilas++;
+		return aguila;
 	}
 	public static int getListado() {
 		return listado;
